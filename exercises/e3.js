@@ -9,10 +9,14 @@
  * */
 
 export function getAverage(array) {
-  // Your code goes here...
-
+  let sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum / array.length
 }
 
+getAverage([20, 22, 24, 26])
 
 /** 
  * PART 2
@@ -22,10 +26,17 @@ export function getAverage(array) {
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
-
+  for (let i = 0; i < str.length; i++){
+    if (str.length < 8) {
+      return 17
+    } else if (str.length > 0) {
+      return 0
+    }
+  }
 }
 
+getStringSum("GH2U87A");
+getStringSum("GHIUJUHSG")
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"

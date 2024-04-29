@@ -4,10 +4,11 @@
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
 export function getFirstTenNumbers() {
-  // Your code goes here...
-
+    return number
 }
 
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(number)
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
 // If the test has all tests passed, switch to the next exercise file

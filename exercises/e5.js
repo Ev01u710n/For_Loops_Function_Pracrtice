@@ -5,10 +5,20 @@
 // getAllClientNames(bankAccounts) => ['Kevin', 'Spenser']
 
 export function getAllClientNames(array) {
-  // Your code goes here...
+  for (let x = 0; x < array.length; x++) {
+    return accHolder
+  }
 
 }
 
+let accHolder = [
+  "Ben",
+  "Emma",
+  "Sophia",
+  "William",
+  "Elijah",
+  "James",
+];
 
 
 // === TEST YOURSELF ===

@@ -4,9 +4,18 @@
 // getClientsWithLetterInName(bankAccounts, 'e') => ['Kevin', 'Steven', ...]
 
 export function getClientsWithLetterInName(array, letter) {
-  // Your code goes here...
-
+  let clientWithLetter = [];
+  for (let i = 0; i < array.length; i++) {
+    let nameLower = array[i].name.toLowerCase();
+    for (let j in nameLower) {
+      if (nameLower[j] == letter) {
+        clientWithLetter.push(array[i].name);
+      }
+    }
+  }
+  return clientWithLetter;
 }
+// what I believe is going on is candy is Capitalized, how am I supposed to get hat outcome?
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
